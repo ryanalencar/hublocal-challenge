@@ -26,7 +26,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       'warn',
       {
-        extensions: ['.jsx', '.tsx'],
+        extensions: ['.jsx', '.tsx','.ts','.js'],
       },
     ],
     'no-underscore-dangle': 'off',
