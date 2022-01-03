@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 
 import Header from '../components/Header';
-import Main from '../components/Main';
+import MainContent from '../components/MainContent';
 
 const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <Main />
+      <MainContent />
     </>
   );
 };
