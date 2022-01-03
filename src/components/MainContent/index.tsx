@@ -11,7 +11,7 @@ const MainContent: React.FC = () => {
   const { height } = useWindowDimensions();
 
   return (
-    <S.MainContainer style={{ height }}>
+    <S.MainContainer id="home" style={{ height }}>
       <S.Section>
         <S.Title>
           <S.LightTitle>Atraia</S.LightTitle> clientes <br />
