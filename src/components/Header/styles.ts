@@ -1,25 +1,28 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div<{ width: number }>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: ${({ width }) => width}px;
   height: 80px;
   padding: 8px;
-  margin-bottom: ${({ theme }) => theme.spacing}px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    height: 120px;
+  }
 `;
 
 export const NavItems = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
   list-style: none;
-  margin-left: ${({ theme }) => theme.spacing * 2}px;
 `;
 
 export const Logo = styled.a`
