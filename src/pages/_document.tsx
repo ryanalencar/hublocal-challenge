@@ -32,6 +32,16 @@ export default class Document extends NextDocument {
       <Html lang="pt-br">
         <Head>
           <link rel="icon" href="static/logo.jpg" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+          />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="512" />
