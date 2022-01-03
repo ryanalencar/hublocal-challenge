@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       </S.Logo>
       <S.NavItems>
         {headerLabels.map(({ href, label }) => (
-          <NavItem href={href} label={label} />
+          <NavItem key={label} href={href} label={label} />
         ))}
       </S.NavItems>
     </S.HeaderContainer>

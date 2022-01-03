@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import marketingImg from '../../assets/ilustracao1.png';
+import marketingImg from '../../assets/marketingimg.png';
 import useWindowDimensions from '../../hooks/useWindowsDimensions';
 import { Divider } from '../common/Divider';
 import * as S from './styles';
@@ -11,12 +11,12 @@ const MainContent: React.FC = () => {
   const { height } = useWindowDimensions();
 
   return (
-    <S.MainContainer style={{ height: height - 80 }}>
+    <S.MainContainer style={{ height }}>
       <S.Section>
         <S.Title>
           <S.LightTitle>Atraia</S.LightTitle> clientes <br />
           <S.LightTitle>de maneira</S.LightTitle> efetiva <br />
-          <S.LightTitle>como nunca visto</S.LightTitle> antes <br />
+          <S.LightTitle>como nunca visto</S.LightTitle> antes!
         </S.Title>
         <Divider vSpacing={30} />
         <S.LightTitle>
@@ -25,7 +25,7 @@ const MainContent: React.FC = () => {
           <br /> que é sucesso😉.
         </S.LightTitle>
       </S.Section>
-      <Image src={marketingImg} height={height} />
+      <Image src={marketingImg} priority />
     </S.MainContainer>
   );
 };
