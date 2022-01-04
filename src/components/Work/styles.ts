@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const WorkSection = styled.div`
-  width: 100%;
-  margin-top: ${({ theme }) => theme.spacing * 2}px;
-`;
-
 export const WorkSectionTitle = styled.h1`
   font-weight: 800;
   font-size: 30px;

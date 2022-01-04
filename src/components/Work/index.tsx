@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { Section } from '../common/Section';
 import Stepper from '../Stepper';
 import * as S from './styles';
 
 const Work: React.FC = () => {
   return (
-    <S.WorkSection id="work">
+    <Section id="work">
       <S.WorkSectionTitle>Como trabalhamos</S.WorkSectionTitle>
       <S.WorkSectionSubTitle>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
@@ -14,7 +15,7 @@ const Work: React.FC = () => {
         similique, sed velit ea!
       </S.WorkSectionSubTitle>
       <Stepper />
-    </S.WorkSection>
+    </Section>
   );
 };
 
