@@ -18,9 +18,9 @@ const IMAGE_HEIGHT = 60;
 
 const headerLabels: HeaderLabels = [
   { label: 'Início', href: '#home', slug: 'home' },
-  { label: 'Como trabalhamos', href: '#', slug: '' },
-  { label: 'Planos', href: '#', slug: '' },
-  { label: 'Contato', href: '#', slug: '' },
+  { label: 'Como trabalhamos', href: '#work', slug: 'work' },
+  { label: 'Planos', href: '#plans', slug: 'plans' },
+  { label: 'Contato', href: '#contacts', slug: 'contacts' },
 ];
 
 const Header: React.FC = () => {

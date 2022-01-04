@@ -11,7 +11,7 @@ function NavItem({ label, href, slug }: INavItemProps) {
   const handleClick = (e: any) => {
     const section = document.getElementById(slug);
     e.preventDefault();
-    if (slug) section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (slug) section?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   };
   return (
     <S.NavItem>
