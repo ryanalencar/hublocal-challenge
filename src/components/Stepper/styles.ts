@@ -5,7 +5,6 @@ export const StepperHorizontal = styled.div`
   width: 100%;
   height: 100%;
   margin: ${({ theme }) => theme.spacing * 5}px auto;
-  background-color: #ffffff;
   box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.5);
 `;
 

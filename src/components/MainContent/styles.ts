@@ -24,12 +24,11 @@ export const Section = styled.div`
 
 export const MainContainer = styled.div`
   width: 100%;
-  /* height: 100%; */
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: ${({ theme }) => theme.spacing}px;
-  background: url('../../static/liquid-cheese.svg') no-repeat;
+  background: url('../../static/bgPrimary.svg') no-repeat;
   background-size: cover;
   @media (max-width: 600px) {
     display: flex;
