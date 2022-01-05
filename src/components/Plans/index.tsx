@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Card from '../Card';
-import { Section, SectionSubTitle, SectionTitle } from '../common/Section';
+import Section from '../common/Section';
 import * as S from './styles';
 
 type PlansCard = {
@@ -55,8 +55,13 @@ const plansCard: PlansCard = [
 
 const Plans: React.FC = () => {
   return (
-    <Section padding={10} id="plans" bgPath="./static/bgSecondary.svg">
-      <SectionTitle>Planos</SectionTitle>
+    <Section
+      title="Planos"
+      subtitle="Planos personalizados de acordo com as suas necessidades. Vem com a
+    gente que realizamos seu pedido"
+      padding={10}
+      id="plans"
+      bgPath="./static/bgSecondary.svg">
       <S.CardArea>
         {plansCard.map(({ planName, enterprise, checklist }) => (
           <Card
@@ -67,10 +72,6 @@ const Plans: React.FC = () => {
           />
         ))}
       </S.CardArea>
-      <SectionSubTitle>
-        Planos personalizados de acordo com as suas necessidades. Vem com a
-        gente que realizamos seu pedido
-      </SectionSubTitle>
     </Section>
   );
 };
