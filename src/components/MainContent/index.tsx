@@ -25,7 +25,12 @@ const MainContent: React.FC = () => {
           <br /> que é sucesso😉.
         </S.LightTitle>
       </S.Section>
-      <Image src={marketingImg} priority />
+      <Image
+        src={marketingImg}
+        alt="Imgem de 3 pessoas em cima de um celular interagindo com outros dispositivos eletrônicos"
+        priority
+        id="marketingImg"
+      />
     </S.MainContainer>
   );
 };

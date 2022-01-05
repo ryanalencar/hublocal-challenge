@@ -10,4 +10,8 @@ export default createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
   }
+
+  #marketingImg {
+    opacity: 0.7;
+  }
 `;
