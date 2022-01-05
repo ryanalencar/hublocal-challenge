@@ -2,14 +2,14 @@ import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet as StyledComponentSheets } from 'styled-components';
 
 export default class Document extends NextDocument {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: any) {
     const styledComponentSheet = new StyledComponentSheets();
     const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
+          enhanceApp: (App: any) => (props: any) =>
             styledComponentSheet.collectStyles(<App {...props} />),
         });
       const initialProps = await NextDocument.getInitialProps(ctx);
