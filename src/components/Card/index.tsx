@@ -12,7 +12,10 @@ import * as S from './styles';
 interface ICardProps {
   planName: string;
   enterprise?: boolean;
-  checklist: string[] | undefined;
+  checklist: {
+    slug: string;
+    label: string;
+  }[];
 }
 
 const Card = ({ planName, enterprise = false, checklist }: ICardProps) => {
@@ -25,12 +28,12 @@ const Card = ({ planName, enterprise = false, checklist }: ICardProps) => {
         </S.CardTitle>
       </S.CardHeader>
       <S.CardContent>
-        {checklist?.map((item) => (
+        {checklist.map(({ label, slug }) => (
           <>
-            <S.CardItems key={item}>
+            <S.CardItems key={slug}>
               <AiOutlineCheck color={theme.colors.secondary} size={20} />
               <Divider hSpacing={5} />
-              <S.CardItemTitle>{item}</S.CardItemTitle>
+              <S.CardItemTitle>{label}</S.CardItemTitle>
             </S.CardItems>
             <Divider vSpacing={10} />
           </>

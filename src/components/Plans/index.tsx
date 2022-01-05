@@ -7,40 +7,49 @@ import * as S from './styles';
 type PlansCard = {
   planName: string;
   enterprise?: boolean;
-  checklist?: string[];
+  checklist: {
+    slug: string;
+    label: string;
+  }[];
 }[];
 
 const plansCard: PlansCard = [
   {
-    planName: 'Start',
-    checklist: ['cadastro mapas e listas', 'acesso ao gerenciador'],
-  },
-  {
-    planName: 'Standard',
+    planName: 'start',
     checklist: [
-      'tudo do plano start',
-      'operador de suporte',
-      'atualização semanal',
-      'publicação de conteúdos',
-      'gestão e avaliação',
+      { label: 'cadastro mapas e listas', slug: 'cadastro-mapas-e-listas' },
+      { label: 'acesso ao gerenciador', slug: 'acesso-ao-gerenciador' },
     ],
   },
   {
-    planName: 'Premium',
+    planName: 'standard',
     checklist: [
-      'tudo do plano standard',
-      'registro de chamadas',
-      'gravação de ligações',
-      'alertas de ligações perdidas',
-      'registro de rotas',
-      'mapa de origem de rotas',
-      'business inteliggence',
+      { label: 'tudo do plano start', slug: 'tudo-do-plano-start' },
+      { label: 'operador de suporte', slug: 'operador-de-suporte' },
+      { label: 'atualização semanal', slug: 'atualizacao-semanal' },
+      { label: 'publicação de conteúdos', slug: 'publicacao-de-conteudos' },
+      { label: 'gestão e avaliação', slug: 'gestao-e-avaliacao' },
     ],
   },
   {
-    planName: 'Enterprise',
+    planName: 'premium',
+    checklist: [
+      { label: 'tudo do plano standard', slug: 'tudo-do-plano-standard' },
+      { label: 'registro de chamadas', slug: 'registro-de-chamadas' },
+      { label: 'gravação de ligações', slug: 'gravacao-de-ligacoes' },
+      {
+        label: 'alertas de ligações perdidas',
+        slug: 'alertas-de-ligacoes-perdidas',
+      },
+      { label: 'registro de rotas', slug: 'registro-de-rotas' },
+      { label: 'mapa de origem de rotas', slug: 'mapa-de-origem-de-rotas' },
+      { label: 'business inteliggence', slug: 'business-inteliggence' },
+    ],
+  },
+  {
+    planName: 'enterprise',
     enterprise: true,
-    checklist: ['plano customizável'],
+    checklist: [{ label: 'plano customizável', slug: 'plano-customizavel' }],
   },
 ];
 
@@ -53,7 +62,7 @@ const Plans: React.FC = () => {
           <Card
             key={planName}
             planName={planName}
-            enterprise={enterprise}
+            enterprise={enterprise || false}
             checklist={checklist}
           />
         ))}

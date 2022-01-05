@@ -25,6 +25,7 @@ export const CardHeader = styled.div`
 `;
 
 export const CardTitle = styled.h1`
+  text-transform: capitalize;
   margin-left: ${({ theme }) => theme.spacing}px;
   font-size: 20px;
   font-weight: 300;
