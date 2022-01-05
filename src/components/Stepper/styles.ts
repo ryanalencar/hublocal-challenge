@@ -1,12 +1,24 @@
 import styled from 'styled-components';
 
+export const StepBar = styled.div`
+  position: absolute;
+  top: 36px;
+  height: 1px;
+  border-top: 1px solid #dddddd;
+`;
+
 export const StepperHorizontal = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
   margin: ${({ theme }) => theme.spacing * 5}px auto;
-  box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.5);
+  @media (max-width: 789px) {
+    grid-template-columns: 1fr;
+    ${StepBar} {
+      border-top: none;
+    }
+  }
 `;
 
 export const StepCircle = styled.div`
@@ -41,13 +53,6 @@ export const StepTitle = styled.div`
   text-align: center;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.primary};
-`;
-
-export const StepBar = styled.div`
-  position: absolute;
-  top: 36px;
-  height: 1px;
-  border-top: 1px solid #dddddd;
 `;
 
 export const StepBarRight = styled(StepBar)`
