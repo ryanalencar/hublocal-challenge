@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-export const WorkSectionTitle = styled.h1`
-  font-weight: 800;
-  font-size: 30px;
-  color: ${({ theme }) => theme.colors.primary};
-  margin: ${({ theme }) => theme.spacing * 3}px 0px 20px 0px;
-  text-align: center;
-`;
-
 export const WorkSectionSubTitle = styled.div`
   width: 100%;
   max-width: 800px;

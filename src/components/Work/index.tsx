@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Section } from '../common/Section';
+import { Section, SectionTitle } from '../common/Section';
 import Stepper from '../Stepper';
 import * as S from './styles';
 
 const Work: React.FC = () => {
   return (
     <Section id="work">
-      <S.WorkSectionTitle>Como trabalhamos</S.WorkSectionTitle>
+      <SectionTitle>Como trabalhamos</SectionTitle>
       <S.WorkSectionSubTitle>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
         odio, debitis vitae voluptatum architecto ipsam et explicabo alias

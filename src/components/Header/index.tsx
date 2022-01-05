@@ -13,15 +13,15 @@ type HeaderLabels = {
   slug: string;
 }[];
 
-const IMAGE_WIDTH = 180;
-const IMAGE_HEIGHT = 60;
-
 const headerLabels: HeaderLabels = [
   { label: 'Início', href: '#home', slug: 'home' },
   { label: 'Como trabalhamos', href: '#work', slug: 'work' },
   { label: 'Planos', href: '#plans', slug: 'plans' },
   { label: 'Contato', href: '#contacts', slug: 'contacts' },
 ];
+
+const IMAGE_WIDTH = 180;
+const IMAGE_HEIGHT = 60;
 
 const Header: React.FC = () => {
   const { width } = useWindowDimensions();
