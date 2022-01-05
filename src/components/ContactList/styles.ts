@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-  width: 100%;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: auto;
   margin: ${({ theme }) => theme.spacing * 5}px auto;
 `;
