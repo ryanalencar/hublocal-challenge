@@ -11,8 +11,7 @@ export const HeaderContainer = styled.div<{ width: number; scrollPos: number }>`
   position: fixed;
   z-index: 10;
   transition: all 0.3s ease;
-  background-color: ${({ theme, scrollPos }) => {
-    console.log(scrollPos);
+  background-color: ${({ scrollPos }) => {
     if (scrollPos < 1 && scrollPos > -882) return 'rgba(0,0,0,.5)';
     if (scrollPos < -881 && scrollPos > -1279) return '#3B3B98';
     if (scrollPos < -1278 && scrollPos > -1801) return '#38ada9';

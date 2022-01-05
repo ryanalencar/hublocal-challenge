@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Section from '../common/Section';
-import Footer from '../Footer';
+import ContactList from '../ContactList';
 
 const Contact: React.FC = () => {
   return (
@@ -10,67 +10,7 @@ const Contact: React.FC = () => {
       title="Nossos Contatos"
       subtitle="Fale conosco"
       bgColor="#fff">
-      <Footer />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <ContactList />
     </Section>
   );
 };
