@@ -8,10 +8,9 @@ const Work: React.FC = () => {
     <Section id="work">
       <SectionTitle>Como trabalhamos</SectionTitle>
       <SectionSubTitle>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-        odio, debitis vitae voluptatum architecto ipsam et explicabo alias
-        facilis natus. Reprehenderit recusandae nemo quis exercitationem veniam
-        similique, sed velit ea!
+        Trabalhamos de acordo com suas necessidades e objetivos, mas existem
+        passos que seguimos extremamente funcionais que vão levar você às nuvens
+        🚀.
       </SectionSubTitle>
       <Stepper />
     </Section>
