@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Card from '../Card';
-import { Section, SectionTitle } from '../common/Section';
+import { Section, SectionSubTitle, SectionTitle } from '../common/Section';
 import * as S from './styles';
 
 type PlansCard = {
@@ -58,10 +58,10 @@ const Plans: React.FC = () => {
           />
         ))}
       </S.CardArea>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque
-      nihil reprehenderit corporis necessitatibus nulla facere sapiente
-      provident! Perferendis iste harum accusantium sapiente illo totam eligendi
-      assumenda praesentium architecto soluta!
+      <SectionSubTitle>
+        Planos personalizados de acordo com as suas necessidades. Vem com a
+        gente que realizamos seu pedido
+      </SectionSubTitle>
     </Section>
   );
 };
