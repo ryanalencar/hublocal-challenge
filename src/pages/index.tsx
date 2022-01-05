@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 
+import Contact from '../components/Contact';
 import Header from '../components/Header';
 import MainContent from '../components/MainContent';
 import Plans from '../components/Plans';
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <MainContent />
       <Work />
       <Plans />
+      <Contact />
     </>
   );
 };

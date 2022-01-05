@@ -6,12 +6,12 @@ interface INavItemProps {
   label: string;
   href: string;
   slug: string;
+  yPos: number;
 }
-function NavItem({ label, href, slug }: INavItemProps) {
+function NavItem({ label, href, slug, yPos }: INavItemProps) {
   const handleClick = (e: any) => {
-    const section = document.getElementById(slug);
     e.preventDefault();
-    if (slug) section?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    window.scrollTo({ behavior: 'smooth', top: yPos });
   };
   return (
     <S.NavItem>

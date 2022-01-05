@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.div<{ width: number }>`
+export const HeaderContainer = styled.div<{ width: number; scrollPos: number }>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,8 +10,14 @@ export const HeaderContainer = styled.div<{ width: number }>`
   padding: 8px;
   position: fixed;
   z-index: 10;
-  background-color: #fff;
-
+  transition: all 0.3s ease;
+  background-color: ${({ theme, scrollPos }) => {
+    console.log(scrollPos);
+    if (scrollPos < 1 && scrollPos > -882) return 'rgba(0,0,0,.5)';
+    if (scrollPos < -881 && scrollPos > -1279) return '#3B3B98';
+    if (scrollPos < -1278 && scrollPos > -1801) return '#38ada9';
+    if (scrollPos < -1800) return '#0a3d62';
+  }};
   @media (max-width: 600px) {
     flex-direction: column;
     height: 120px;
